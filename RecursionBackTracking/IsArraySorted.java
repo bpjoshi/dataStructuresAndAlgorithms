@@ -1,3 +1,11 @@
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
+/*
+ Problem statement: Check if an array is sorted in an ascending order using recursion
+ */
 public class IsArraySorted {
 	public static void main(String[] args) {
 		IsArraySorted iAS= new IsArraySorted();

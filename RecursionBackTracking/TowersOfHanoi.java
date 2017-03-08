@@ -1,3 +1,13 @@
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
+/*
+ Problem: Solve the problem towers of Hanoi in Java using recursion
+ Link of the problem for detail description
+ https://en.wikipedia.org/wiki/Tower_of_Hanoi
+ */
 public class TowersOfHanoi{
 	
 	public static void main(String[] args) {

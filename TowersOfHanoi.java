@@ -1,26 +1,25 @@
 public class TowersOfHanoi{
-	public void towersOfHanoi(int n, char start, char aux, char end) {
-		
-		//If there is only one disk, shift it to end Tower
-        if (n == 1) {
-            System.out.println(start + " shifting to -> " + end);
-        } else {
-        	//Move top n-1 disks from start A to B using C as Auxiliary 
-        	towersOfHanoi(n - 1, start, end, aux);
-        	//Move the nth (only remaining) disk from start A to  destination C
-            System.out.println(start + " shifting to -> " + end);
-            //move the top n-1 disk from aux B to end C using A as Auxiliary
-            towersOfHanoi(n - 1, aux, start, end);
-        }
-}
+	
+	public static void main(String[] args) {
+		TowersOfHanoi tOH= new TowersOfHanoi();
+		tOH.towersOfHanoi(4, 'A', 'B', 'C');
+	}
 
-public static void main(String[] args) {
-
-	TowersOfHanoi towersOfHanoi = new TowersOfHanoi();
-
-        System.out.print("Enter number of discs: ");
-        int discs = 10;
-        towersOfHanoi.towersOfHanoi(discs, 'A', 'B', 'C');
-}
+	private void towersOfHanoi(int n, char source, char destination, char helper) {
+		//Base case, If there is only one disk move it direct from source to destination
+		if(n==1){
+			System.out.println("Move from "+source+" to "+destination);
+		}
+		else{
+			//Step1: Move the top n-1 disks from source to helper
+			towersOfHanoi(n-1, source, helper, destination);
+			//Step2: Move the nth disk from source to destination
+			System.out.println("Move from "+source+" to "+destination);
+			/*Step3: Move the n-1 disks(those you moved from source to helper in step1) 
+			 * from helper to destination, using source(empty after step2) as helper
+			 */
+			towersOfHanoi(n-1, helper, destination, source);
+		}
+	}
 
 }

@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
+//Garbage collection of Linked list
 class LinkedListGC
 {
    static class Node

@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
 class LinkedListConcatInverse
 {
    static class DictionaryEntry

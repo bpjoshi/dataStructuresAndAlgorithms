@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
+//Add operation in singly linked list
 public class LinkedListAddOperation {
 	//Static inner class Node
 	static class Node{

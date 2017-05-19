@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Bhagwati Prasad(bpjoshi)
+ *
+ */
+//Delete Operation in Singly Linked List
 public class LinkedListDelOperation {
 	static class Node{
 		String name;

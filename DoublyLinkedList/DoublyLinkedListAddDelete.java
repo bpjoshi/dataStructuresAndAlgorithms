@@ -40,5 +40,27 @@ public class DoublyLinkedListAddDelete {
 	    	  temp=temp.previous;
 	      }
 	     System.out.println();
+	     
+	     //Delete node B
+	     temp=topForward.next;
+	     topForward.next=temp.next;
+	     topBackward.previous=temp.previous;
+	     //Print Forward singly linked list after node deletion
+	   //Print forward singly linkedList
+	      temp=topForward;
+	      System.out.print("Forward Singly Linked List: ");
+	      while(temp!=null){
+	    	  System.out.print(temp.name+" ");
+	    	  temp=temp.next;
+	      }
+	     System.out.println();
+	   //Print backward singly linked list after node deletion
+	     temp=topBackward;
+	      System.out.print("Backward Singly Linked List: ");
+	      while(temp!=null){
+	    	  System.out.print(temp.name+" ");
+	    	  temp=temp.previous;
+	      }
+	     System.out.println();
 	}
 }

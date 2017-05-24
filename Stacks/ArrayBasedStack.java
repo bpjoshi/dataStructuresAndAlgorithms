@@ -3,7 +3,8 @@ package stacks;
  * @author Bhagwati Prasad(bpjoshi)
  */
 public class ArrayBasedStack implements StackInterface {
-	
+	//top variable should be made private and Object array also so that
+	//they cannot be altered from outside.
 	private int top = -1;
 	private Object [] stack;
 	

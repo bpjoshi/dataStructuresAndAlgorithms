@@ -1,5 +1,7 @@
 package com.bpjoshi.dsalgo.queue;
-
+/**
+ * @author Bhagwati Prasad(bpjoshi)
+ */
 public class QueueTest {
 	public static void main(String[] args) {
 		ArrayBasedLinearQueue qQ=new ArrayBasedLinearQueue(4);

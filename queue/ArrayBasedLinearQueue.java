@@ -2,11 +2,6 @@
  * @author Bhagwati Prasad(bpjoshi)
  */
 package com.bpjoshi.dsalgo.queue;
-
-/**
- * @author bprasad
- *
- */
 public class ArrayBasedLinearQueue implements Queue {
 
 	private int front = -1, rear = -1;
